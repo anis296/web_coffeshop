@@ -19,11 +19,11 @@ export const Route = createFileRoute("/")({
 // IMPORTANT: Replace this placeholder. See ./README.md for routing conventions.
 function Index() {
   return <>
-    <section className="relative min-h-[calc(100svh-4.5rem)] overflow-hidden bg-fir">
+    <section className="relative min-h-[calc(92svh-4.5rem)] overflow-hidden bg-fir">
       <img src={heroImage} alt="Чашка горячего кофе у заснеженного окна кофейни" width={1600} height={1200} className="absolute inset-0 h-full w-full object-cover opacity-75" />
       <div className="absolute inset-0 bg-gradient-to-r from-fir/95 via-fir/55 to-transparent" />
       <div className="snow" aria-hidden="true">{Array.from({ length: 18 }).map((_, i) => <i key={i} />)}</div>
-      <div className="relative mx-auto flex min-h-[calc(100svh-4.5rem)] max-w-7xl items-end px-5 pb-16 pt-28 lg:px-8 lg:pb-20">
+      <div className="relative mx-auto flex min-h-[calc(92svh-4.5rem)] max-w-7xl items-end px-5 pb-16 pt-28 lg:px-8 lg:pb-20">
         <div className="max-w-3xl animate-gentle-rise text-secondary-foreground">
           <p className="text-xs font-semibold uppercase opacity-75">Кофейня • зимний сезон</p>
           <h1 className="mt-6 font-display text-5xl leading-[1.05] sm:text-7xl lg:text-8xl">С теплом<br />и Уютом</h1>
