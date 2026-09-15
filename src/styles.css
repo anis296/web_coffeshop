@@ -164,3 +164,24 @@
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; }
 }
+
+.snow { position:absolute; inset:0; overflow:hidden; pointer-events:none; }
+.snow i { position:absolute; top:-5%; width:4px; height:4px; border-radius:999px; background:var(--secondary-foreground); opacity:.65; animation:snow-fall 10s linear infinite; }
+.snow i:nth-child(1) { left:0%; animation-delay:-0.0s; animation-duration:8s; }
+.snow i:nth-child(2) { left:37%; animation-delay:-0.7s; animation-duration:9s; }
+.snow i:nth-child(3) { left:74%; animation-delay:-1.4s; animation-duration:10s; }
+.snow i:nth-child(4) { left:14%; animation-delay:-2.1s; animation-duration:11s; }
+.snow i:nth-child(5) { left:51%; animation-delay:-2.8s; animation-duration:12s; }
+.snow i:nth-child(6) { left:88%; animation-delay:-3.5s; animation-duration:13s; }
+.snow i:nth-child(7) { left:28%; animation-delay:-4.2s; animation-duration:8s; }
+.snow i:nth-child(8) { left:65%; animation-delay:-4.9s; animation-duration:9s; }
+.snow i:nth-child(9) { left:5%; animation-delay:-5.6s; animation-duration:10s; }
+.snow i:nth-child(10) { left:42%; animation-delay:-6.3s; animation-duration:11s; }
+.snow i:nth-child(11) { left:79%; animation-delay:-7.0s; animation-duration:12s; }
+.snow i:nth-child(12) { left:19%; animation-delay:-7.7s; animation-duration:13s; }
+.snow i:nth-child(13) { left:56%; animation-delay:-8.4s; animation-duration:8s; }
+.snow i:nth-child(14) { left:93%; animation-delay:-9.1s; animation-duration:9s; }
+.snow i:nth-child(15) { left:33%; animation-delay:-9.8s; animation-duration:10s; }
+.snow i:nth-child(16) { left:70%; animation-delay:-10.5s; animation-duration:11s; }
+.snow i:nth-child(17) { left:10%; animation-delay:-11.2s; animation-duration:12s; }
+.snow i:nth-child(18) { left:47%; animation-delay:-11.9s; animation-duration:13s; }
