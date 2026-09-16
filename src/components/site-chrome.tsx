@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from "@/components/ui/sheet";
 
 const links = [
+  { to: "/" as const, label: "Главная" },
   { to: "/about" as const, label: "О нас" },
   { to: "/addresses" as const, label: "Наши адреса" },
   { to: "/news" as const, label: "Новости" },
@@ -18,7 +19,7 @@ export function SiteHeader() {
           <span className="grid size-9 shrink-0 place-items-center rounded-full bg-secondary text-secondary-foreground"><Coffee size={18} /></span>
           <span className="truncate font-display text-base sm:text-lg">С теплом и Уютом</span>
         </Link>
-        <nav className="hidden items-center gap-7 md:flex" aria-label="Основная навигация">
+        <nav className="hidden items-center gap-6 md:flex" aria-label="Основная навигация">
           {links.map((link) => <Link key={link.to} to={link.to} className="text-sm text-muted-foreground transition-colors hover:text-foreground" activeProps={{ className: "text-foreground" }}>{link.label}</Link>)}
         </nav>
         <div className="shrink-0 md:hidden">
